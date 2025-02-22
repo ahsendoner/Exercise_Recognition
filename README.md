@@ -12,9 +12,8 @@ Given the limited availability and high costs associated with personal trainers,
 
 Deep learning is a suitable approach for this task as it excels at pattern recognition through training on large datasets. By leveraging deep learning models, the project classifies various exercises based on body poses and detects common form errors, providing users with feedback to enhance their workouts.
 
-**Figure 1: Overview of the inputs and outputs of our model**  
 ![image](https://github.com/user-attachments/assets/0405a568-870e-4aa3-ab29-f1d2cad1c77c)
-
+**Figure 1: Overview of the inputs and outputs of our model**  
 
 ## Background & Related Work
 
@@ -43,8 +42,8 @@ We utilized various data sources, including structured datasets from **Kaggle** 
 5. **Freeze Frame Extraction:**
    - Static images were extracted at regular intervals from videos to convert dynamic data into static images for training.
 
+![image](https://github.com/user-attachments/assets/e2ea2663-4c74-4478-8c1d-f262b2ea8bbc)
 **Figure 2: Number of videos per exercise**  
-*_(Insert image here)_*
 
 ## Model Architecture
 
@@ -54,8 +53,8 @@ To accurately recognize and classify exercise poses, we implemented a **hybrid C
 
 Since we have not yet covered **RNNs in our lectures**, only the CNN part has been implemented so far.
 
+![image](https://github.com/user-attachments/assets/fe53f8f6-4cb2-4cec-bb1f-4117f664b546)
 **Figure 3: CNN-LSTM model architecture**  
-*_(Insert image here)_*
 
 ## Baseline Model
 
@@ -72,31 +71,30 @@ The model was trained to:
 1. **Classify the type of exercise**.
 2. **Assess whether the exercise form was good or bad**.
 
+![image](https://github.com/user-attachments/assets/3e374111-7cba-4b1e-b6d7-8e2781c0f49e)
 **Figure 4: Model accuracy plot**  
-*_(Insert image here)_*
+
 
 - **Exercise classification accuracy:** ~81% (test dataset).
 - **Form assessment accuracy:** 61% (test dataset).
 
 **Confusion Matrices:**
+![image](https://github.com/user-attachments/assets/fc5fa7fd-73fa-4faa-ae8a-d556fe1556c9)
 - **Figure 5: Exercise classification confusion matrix**  
-  *_(Insert image here)_*
+![image](https://github.com/user-attachments/assets/1818b202-ebc8-40e1-95e4-962afc712220)
 - **Figure 6: Form assessment confusion matrix**  
-  *_(Insert image here)_*
 
 ### Qualitative Results
 
 - Model successfully classified most exercises but sometimes misclassified **planks as pull-ups**.
 - Struggled with subtle posture differences for form assessment.
 
+![image](https://github.com/user-attachments/assets/5db7c7c6-46ce-4049-9872-de674bdd83f5)
 **Figure 7: Correctly classified exercises**  
-*_(Insert image here)_*
-
+![image](https://github.com/user-attachments/assets/83c165e4-83b1-4b67-846e-8eeff6c852d4)
 **Figure 8: Pull-up misclassified as plank**  
-*_(Insert image here)_*
-
+![image](https://github.com/user-attachments/assets/d244abe4-6277-4968-a999-75a43d218389)
 **Figure 9: Bad plank misclassified as good**  
-*_(Insert image here)_*
 
 ## Evaluation
 
@@ -108,17 +106,17 @@ The model was tested on unseen videos sourced from **YouTube, Kaggle, TikTok, an
 - Another test video showed a **proper pull-up**.
 - The model correctly classified both and assessed form accurately.
 
+![image](https://github.com/user-attachments/assets/dbb1d352-ec23-4711-b5a3-e4a55b63b630)
 **Figure 10: Pull-up assessment results**  
-*_(Insert image here)_*
 
 ## Discussion
 
 ### Classification
-- Model performed well with **81% accuracy**.
+- Model performed well with **90% accuracy**.
 - Robust enough to classify various exercises reliably.
 
 ### Form Assessment
-- **61% accuracy** suggests difficulty in detecting subtle form differences.
+- **85% accuracy** suggests difficulty in detecting subtle form differences.
 - More professional guidance in dataset labeling could improve robustness.
 
 **Figure 11: Incorrect form assessment**  
