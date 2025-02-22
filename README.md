@@ -106,7 +106,7 @@ The model was tested on unseen videos sourced from **YouTube, Kaggle, TikTok, an
 - Another test video showed a **proper pull-up**.
 - The model correctly classified both and assessed form accurately.
 
-![image](https://github.com/user-attachments/assets/dbb1d352-ec23-4711-b5a3-e4a55b63b630)
+![image](https://github.com/user-attachments/assets/4fef46a6-ca1c-4e6a-b0a7-c0d740edbde7)
 **Figure 10: Pull-up assessment results**  
 
 ## Discussion
@@ -119,15 +119,15 @@ The model was tested on unseen videos sourced from **YouTube, Kaggle, TikTok, an
 - **85% accuracy** suggests difficulty in detecting subtle form differences.
 - More professional guidance in dataset labeling could improve robustness.
 
+![image](https://github.com/user-attachments/assets/eda12907-3d0f-46a8-a8ec-0ce15e0af58a)
 **Figure 11: Incorrect form assessment**  
-*_(Insert image here)_*
 
 ## Observations & Limitations
 
 ### Unusual Misclassification
 - The model sometimes confused planks with pull-ups due to **camera angles and elbow positioning**.
-- **Figure 12: Rotated pull-up vs plank**  
-  *_(Insert image here)_*
+![image](https://github.com/user-attachments/assets/d952a43d-0c2c-4fa2-820e-48601a48e677)
+**Figure 12: Rotated pull-up vs plank**  
 
 ### Robust Classification
 - Surprisingly, the model distinguished **deadlifts from barbell curls** despite similar arm movements and added equipment noise.
@@ -135,7 +135,7 @@ The model was tested on unseen videos sourced from **YouTube, Kaggle, TikTok, an
 ## Ethical Considerations
 
 1. **Biased Assessment**:
-   - Variability in labeling "good" and "bad" postures could lead to inconsistent feedback.
+   - Variability in labelling "good" and "bad" postures could lead to inconsistent feedback.
 2. **Over-Reliance on AI Feedback**:
    - Users might depend entirely on the model, ignoring pain or discomfort.
 
@@ -148,5 +148,4 @@ The model was tested on unseen videos sourced from **YouTube, Kaggle, TikTok, an
 
 ## References
 
-_(Provide references in standard citation format)_
 
