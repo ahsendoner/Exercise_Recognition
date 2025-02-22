@@ -79,9 +79,9 @@ The model was trained to:
 - **Form assessment accuracy:** 61% (test dataset).
 
 **Confusion Matrices:**
-![image](https://github.com/user-attachments/assets/fc5fa7fd-73fa-4faa-ae8a-d556fe1556c9)
+![image](https://github.com/user-attachments/assets/3eec4557-7ed9-4403-8bda-7292a17a637a)
 - **Figure 5: Exercise classification confusion matrix**  
-![image](https://github.com/user-attachments/assets/1818b202-ebc8-40e1-95e4-962afc712220)
+![image](https://github.com/user-attachments/assets/7e26a96d-0598-419f-87aa-675811ff1d52)
 - **Figure 6: Form assessment confusion matrix**  
 
 ### Qualitative Results
